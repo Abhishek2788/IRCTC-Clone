@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Next GenerationeTicketing System</title>
+    <link rel="shortcut icon" href="/assests/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="logo1">
+                <img src="/assests/secondry-logo.png" alt="railway">
+            </div>
+            <div class="nav-content">
+                <div class="nav-content-upper">
+                    <div class="LOGIN">LOGIN</div>
+                    <div class="REGISTER">REGISTER</div>
+                    <div class="AGENT-LOGIN">AGENT LOGIN</div>
+                    <div class="CONTACT US">CONTACT US</div>
+                    <div class="DAILY-DEALS">DAILY DEALS</div>
+                    <div class="ALERTS">ALERTS</div>
+                    <div class="DATE">
+                        <h1 id="curDate"></h1>
+                    </div>
+                    <div class="smaller"><strong>A</strong> <sup>-</sup></div>
+                    <div class="normal"><strong>A</strong></div>
+                    <div class="capital"><strong>A</strong> <sup>+</sup></div>
+                    <div class="Hindi"><strong>हिन्दी</strong></div>
+                </div>
+                <div class="nav-content-lower">
+                    <div class="home"><i class="fa-solid fa-house"></i></div>
+                    <div class="IRCTC-EXCLUSIVE">
+                        IRCTC EXCLUSIVE
+                        <div class="IRCTC-EXCLUSIVE-drop-down">
+                            <div class="irctc-ewallet IRCTC-EXCLUSIVE-drop-down-content">
+                                <span>
+                                    <img src="/assests/logo.png" alt="logo">
+                                    <a href="#">IRCTC eWallet</a>
+                                </span>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="irctc-ewallet-submenu">
+                                    <div class="About-IRCTC-eWallet IRCTC-eWallet-content"><a href="#">About IRCTC eWallet</a></div>
+                                    <div class="IRCTC-eWallet-User-Guide IRCTC-eWallet-content"><a href="#">IRCTC eWallet User Guide</a></div>
+                                </div>
+                            </div>
+                            <div class="irctc-ipay IRCTC-EXCLUSIVE-drop-down-content">
+                                <span>
+                                    <img src="/assests/logo.png" alt="logo">
+                                    <a href="#">IRCTC iPAY</a>
+                                </span>
+                            </div>
+                            </span>
+                            <div class="hotdeals IRCTC-EXCLUSIVE-drop-down-content">
+                                <span>
+                                    <i class="fa-solid fa-fire"></i>
+                                    <a href="#">Hot Deals</a>
+                                </span>
+                            </div>
+                            <div class="ott-vouchers IRCTC-EXCLUSIVE-drop-down-content">
+                                <span>
+                                    <i class="fa-solid fa-ticket"></i>
+                                    <a href="#">OTT Vouchers</a>
+                            </div>
+                            </span>
+                            <div class="shopping IRCTC-EXCLUSIVE-drop-down-content">
+                                <span>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <a href="#">SHOPPING</a>
+                            </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="TRAINS">
+                        <a href="#"><strong>TRAINS</strong></a>
+                        <div class="trains-submenu"> 
+                            <div class="book-ticket trains-submenu-content"><a href="#">Book Ticket</a></div>
+                            <div class="Foregin-Tourist-Booking trains-submenu-content"><a href="#">Foregin Tourist Booking</a></div>
+                            <div class="Connecting-Journey-Booking trains-submenu-content"><a href="#">Connecting Journey Booking</a></div>
+                            <div class="IRCTC-TRAINS trains-submenu-content">
+                                <a href="#">IRCTC TRAINS</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="IRCTC-TRAINS-submenu">
+                                    <div class="Group Booking IRCTC-TRAINS-content"><a href="#">Group Booking</a></div>
+                                    <div class="Travel-Insurance IRCTC-TRAINS-content"><a href="#">Travel Insurance Claim Process</a></div>
+                                </div>
+                            </div>
+                            <div class="Cancel-Ticket trains-submenu-content">
+                                <a href="#">Cancel Ticket</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="Cancel-Ticket-submenu">
+                                    <div class="etickets Cancel-Ticket-submenu-Content"><a href="#">E-tickets</a></div>
+                                    <div class="counterTicket Cancel-Ticket-submenu-Content"><a href="#">Counter Ticket</a></div>
+                                </div>
+                            </div>
+                            <div class="PNR-Enquiry trains-submenu-content"><a href="#">PNR Enquiry</a></div>
+                            <div class="Train-Schedule trains-submenu-content"><a href="#">Train Schedule</a></div>
+                            <div class="Track-Your-Train trains-submenu-content"><a href="#">Track Your Train</a></div>
+                            <div class="FTR-Booking trains-submenu-content"><a href="#">FTR Coach/Train Booking</a></div>
+                            <div class="Cats-Booking trains-submenu-content"><a href="#">Dogs/Cats Booking</a></div>
+                        </div>
+                    </div>
+                    <div class="BUSES">BUSES</div>
+                    <div class="FLIGHTS">FLIGHTS</div>
+                    <div class="HOTELS">HOTELS</div>
+                    <div class="HOLIDAYS">
+                        HOLIDAYS
+                        <div class="HOLIDAYS-Submenu">
+                            <div class="Tourist-Trains HOLIDAYS-Submenu-content">
+                                <a href="#">Tourist Trains</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="Tourist-Trains-submenu">
+                                    <div class="Bharat-Gaurav Tourist-Trains-submenu-content"><a href="#">Bharat Gaurav</a></div>
+                                    <div class="Maharaja-Express Tourist-Trains-submenu-content"><a href="#">Maharaja's Express</a></div>
+                                    <div class="Golden-Chariot Tourist-Trains-submenu-content"><a href="#">Golden Chariot</a></div>
+                                </div>
+                            </div>
+                            <div class="Tour-Packages HOLIDAYS-Submenu-content">
+                                <a href="#">Tour Packages</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="Tour-Packages-submenu">
+                                    <div class="Domestic-Packages Tour-Packages-submenu-content"><a href="#">Domestic Packages</a></div>
+                                    <div class="International-Packages Tour-Packages-submenu-content"><a href="#">International Packages</a></div>
+                                </div>
+                            </div>
+                            <div class="Stays HOLIDAYS-Submenu-content">
+                                <a href="#">Stays</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="Stays-submenu">
+                                    <div class="Retiring-Room Stays-submenu-content"><a href="#">Retiring Room</a></div>
+                                    <div class="Lounge Stays-submenu-content"><a href="#">Lounge</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="LOYALTY">
+                        LOYALTY
+                        <div class="LOYALTY-submenu">
+                            <div class="About-IRCTC-Loyalty-program LOYALTY-submenu-content">
+                                <a href="#">About IRCTC Loyalty program</a>
+                            </div>
+
+                            <div class="IRCTC-SBI-Credit-Card LOYALTY-submenu-content">
+                                <a href="#">IRCTC SBI Credit Card</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="IRCTC-SBI-Credit-Card-submenu">
+                                    <div class="About-IRCTC-SBI-Credit-Card IRCTC-SBI-Credit-Card-submenu-content">
+                                        <a href="#">About IRCTC SBI Credit Card</a>
+                                    </div>
+                                    <div class="IRCTC-SBI-Platinum IRCTC-SBI-Credit-Card-submenu-content">
+                                        <a href="#">IRCTC SBI Platinum RUPAY e-apply</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="IRCTC-BOB-Credit-Card LOYALTY-submenu-content">
+                                <a href="#">IRCTC BOB Credit Card</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="IRCTC-BOB-Credit-Card-submenu">
+                                    <div class="About-IRCTC-BOB-Credit-Card IRCTC-BOB-Credit-Card-submenu-content">
+                                        <a href="#">About IRCTC BOB Credit Card</a>
+                                    </div>
+                                    <div class="IRCTC-BOB-Platinum IRCTC-BOB-Credit-Card-submenu-content">
+                                        <a href="#">IRCTC BOB RUPAY Credit Card e-apply</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="IRCTC-HDFC-Credit-Card LOYALTY-submenu-content">
+                                <a href="#">IRCTC HDFC Credit Card</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="IRCTC-HDFC-Credit-Card-submenu">
+                                    <div class="About-IRCTC-HDFC-Credit-Card IRCTC-HDFC-Credit-Card-submenu-content">
+                                        <a href="#">About IRCTC HDFC Credit Card</a>
+                                    </div>
+                                    <div class="IRCTC-HDFC-Platinum IRCTC-HDFC-Credit-Card-submenu-content">
+                                        <a href="#">IRCTC HDFC RUPAY Credit Card e-apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MEALS">
+                        MEALS
+                        <div class="MEALS-submenu">
+                            <div class="Order-Food MEALS-submenu-content"><a href="#">Order Food-e-Catering</a></div>
+                            <div class="Cooked-Food MEALS-submenu-content"><a href="#">Cooked Food Menu</a></div>
+                        </div>
+                    </div>
+
+                    <div class="PROMOTIONS">
+                        PROMOTIONS
+                        <div class="PROMOTIONS-submenu"> 
+                            <div class="Advertise-With-Us PROMOTIONS-submenu-content">
+                                <a href="#">Advertise With Us</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="Advertise-With-Us-submenu"> 
+                                    <div class="Banner-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Banner-Advertisement</a>
+                                    </div>
+                                    <div class="Push-Notification Advertise-With-Us-submenu-content">
+                                        <a href="#">Push Notification</a>
+                                    </div>
+                                    <div class="Chat-Bot-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Chat Bot Advertisement</a>
+                                    </div>
+                                    <div class="Cuboid-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Cuboid Advertisement</a>
+                                    </div>
+                                    <div class="e-Ticket-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">e-Ticket Advertisement</a>
+                                    </div>
+                                    <div class="Logout-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Logout Advertisement</a>
+                                    </div>
+                                    <div class="SMS Advertise-With-Us-submenu-content">
+                                        <a href="#">SMS(Promotional)</a>
+                                    </div>
+                                    <div class="Booking-Mail-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Booking Mail Advertisement</a>
+                                    </div>
+                                    <div class="Cancellationa-Mail-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Cancellationa Mail Advertisement</a>
+                                    </div>
+                                    <div class="Mailer Advertise-With-Us-submenu-content">
+                                        <a href="#">Mailer(Promotional)</a>
+                                    </div>
+                                    <div class="Captcha-Advertisement Advertise-With-Us-submenu-content">
+                                        <a href="#">Captcha Advertisement</a>
+                                    </div>
+                                    <div class="Advertisement-Disclaimer Advertise-With-Us-submenu-content">
+                                        <a href="#">Advertisement Disclaimer</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="IRCTC-Rail-Connect-App PROMOTIONS-submenu-content">
+                                <a href="#">IRCTC Rail Connect App</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="IRCTC-Rail-Connect-App-submenu">
+                                    <div class="Android-Mobile-App IRCTC-Rail-Connect-App-submenu-content">
+                                        <a href="#">Android Mobile App</a>
+                                    </div>
+                                    <div class="iOS-Mobile-App IRCTC-Rail-Connect-App-submenu-content">
+                                        <a href="#">iOS Mobile App</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="IRCTC-Tourism-App PROMOTIONS-submenu-content">
+                                <a href="#">IRCTC Tourism App</a>
+                            </div>
+                            <div class="IRCTC-Air-App PROMOTIONS-submenu-content">
+                                <a href="#">IRCTC Air App</a>
+                            </div>
+                            <div class="National-Rail-Museum PROMOTIONS-submenu-content">
+                                <a href="#">National Rail Museum</a>
+                            </div>
+                            <div class="UTS-Ticket-App PROMOTIONS-submenu-content">
+                                <a href="#">UTS Ticket App</a>
+                            </div>
+
+                            <div class="IRCTC-SBI-Credit-Card PROMOTIONS-submenu-content">
+                                <a href="#">IRCTC SBI Credit Card</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="IRCTC-SBI-Credit-Card-submenu">
+                                    <div class="About-IRCTC-SBI-Credit-Card IRCTC-SBI-Credit-Card-submenu-content">
+                                        <a href="#">About IRCTC SBI Credit Card</a>
+                                    </div>
+                                    <div class="IRCTC-SBI-Platinum IRCTC-SBI-Credit-Card-submenu-content">
+                                        <a href="#">IRCTC SBI Platinum RUPAY e-apply</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="Trains-At-A-Glance PROMOTIONS-submenu-content">
+                                <a href="#">Trains At A Glance</a>
+                            </div>
+                            <div class="National-Portal PROMOTIONS-submenu-content">
+                                <a href="#">National Voter's Service Portal</a>
+                            </div>
+                            <div class="Mahila-E-Haat PROMOTIONS-submenu-content">
+                                <a href="#">Mahila E-Haat</a>
+                            </div>
+                            <div class="Rail Drishti PROMOTIONS-submenu-content">
+                                <a href="#">Rail Drishti</a>
+                            </div>
+                            <div class="Indian-Railways-Magazines PROMOTIONS-submenu-content">
+                                <a href="#">Indian Railways Magazines</a>
+                            </div>
+                            <div class="Railways-Freight-Bussiness-Portal PROMOTIONS-submenu-content">
+                                <a href="#">Railways Freight Bussiness Portal</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MORE">
+                        MORE
+                        <div class="MORE-submenu"> 
+                            <div class="ChatBot-Service MORE-submenu-content">
+                                <a href="#">ChatBot as a Service (CaaS)</a>
+                            </div>
+                            <div class="Link-Your-Aadhar MORE-submenu-content">
+                                <a href="#">Link Your Aadhar</a>
+                            </div>
+                            <div class="Counter-Ticket-Cancellation MORE-submenu-content">
+                                <a href="#">Counter Ticket Cancellation</a>
+                            </div>
+                            <div class="Counter-Ticket-Boarding-Point-Change MORE-submenu-content">
+                                <a href="#">Counter Ticket Boarding Point Change</a>
+                            </div>
+                            <div class="FORGOT-ACCOUNT-DETAILS MORE-submenu-content">
+                                <a href="#">FORGOT ACCOUNT DETAILS?</a>
+                            </div>
+                            <div class="At-Stations MORE-submenu-content">
+                                <a href="#">At Stations</a>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <div class="At-Stations-submenu">
+                                    <div class="WIFI-Railway-Stations At-Stations-submenu-content">
+                                        <a href="#">WIFI-Railway Stations</a>
+                                    </div>
+                                    <div class="Battery-Operated-Cars At-Stations-submenu-content">
+                                        <a href="#">Battery Operated Cars</a>
+                                    </div>
+                                    <div class="E-wheelchair At-Stations-submenu-content">
+                                        <a href="#">E-wheelchair</a>
+                                    </div>
+                                    <div class="Retiring-Room At-Stations-submenu-content">
+                                        <a href="#">Retiring Room</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo3">
+                <img src="/assests/logo.png" alt="irctc">
+            </div>
+        </nav>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>

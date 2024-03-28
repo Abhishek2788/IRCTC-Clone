@@ -1,0 +1,831 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 100%;
+    height: 130px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    /* margin: 20px 60px; */
+    /* background-color: aqua; */
+    
+}
+.logo1 img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.nav-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: bisque; */
+    width: 70%;
+}
+.nav-content-upper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-content-lower{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.LOGIN{
+    background-color: #213d77;
+    width: 68px;
+    height: 32px;
+    padding: 7px 8px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+}
+.DAILY-DEALS{
+    color: red;
+    font-weight: 700;
+}
+.ALERTS{
+    background-color: #d3d3d3;
+    width: 90px;
+    height: 32px;
+    padding: 7px 8px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+.IRCTC-EXCLUSIVE{
+    width: 160px;
+    height: 32px;
+    background-color: #213d77;
+    color: #ffffff;
+    padding: 6px 14px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    position: relative;
+}
+.TRAINS{
+    width: 56px;
+    height: 18px;
+}
+.TRAINS a{
+    color: #fb792b;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.logo3 img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.DATE{
+    display: flex;
+    width: 190px;
+    height: 18px;
+}
+#curDate{
+    width: 100%;
+    font-size: 17px;
+    font-weight: 1000;
+}
+
+
+/* drop menu IRCTC-EXCLUSIVE-drop-down */
+
+.IRCTC-EXCLUSIVE-drop-down{
+    display: none;
+    position: absolute;
+    color: black;
+    width: 230px;
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+    font-size: 14px;
+    text-decoration: none; 
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%); 
+    z-index: 10;
+    background-color: #ffffff;
+}
+.irctc-ewallet span img{
+    width: 30px;
+    height: 40px;
+}
+.irctc-ewallet span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.irctc-ipay span img{
+    width: 30px;
+    height: 40px;
+}
+.IRCTC-EXCLUSIVE-drop-down-content span{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+.IRCTC-EXCLUSIVE-drop-down-content span i{
+    font-size: 1.5rem;
+}
+.IRCTC-EXCLUSIVE-drop-down-content span a{
+    color: black;
+    text-decoration: none;
+}
+.IRCTC-EXCLUSIVE-drop-down-content{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.IRCTC-EXCLUSIVE:hover .IRCTC-EXCLUSIVE-drop-down{
+    display: block;
+}
+.IRCTC-EXCLUSIVE-drop-down-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+.irctc-ewallet{
+    position: relative;
+}
+.irctc-ewallet-submenu{
+    display: none;
+    position: absolute;
+    width: 240px;
+    background-color: #ffffff;
+    right: 4%;
+    top: 50%;
+    transform: translateX(100%); 
+}
+.IRCTC-eWallet-content{
+    width: 100%;
+    padding: 10px;
+}
+.IRCTC-eWallet-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.irctc-ewallet:hover .irctc-ewallet-submenu{
+    display: block;
+}
+.IRCTC-eWallet-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+.TRAINS{
+    position: relative;
+}
+.TRAINS::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #fb792b;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translateY(85%);
+}
+.TRAINS:hover::after{
+    display: block;
+}
+.trains-submenu{
+    display: none;
+    position: absolute;
+    width: 280px;
+    background-color: #ffffff;
+    transform: translateY(1%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.trains-submenu-content{
+    width: 100%;
+    padding: 10px;
+}
+.trains-submenu-content a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+.trains-submenu-content i{
+    font-size: 20px;
+}
+.IRCTC-TRAINS{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.Cancel-Ticket{
+    display: flex;
+    justify-content: space-between;
+}
+.TRAINS:hover .trains-submenu{
+    display: block;
+}
+.trains-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+.IRCTC-TRAINS-submenu{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+    width: 280px;
+    background-color: #ffffff;
+    right: -98%;
+}
+.IRCTC-TRAINS-content{
+    width: 100%;
+    padding: 10px;
+}
+.IRCTC-TRAINS-content a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+.IRCTC-TRAINS:hover .IRCTC-TRAINS-submenu{
+    display: block;
+}
+.IRCTC-TRAINS-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+.Cancel-Ticket{
+    position: relative;
+}
+.Cancel-Ticket-submenu{
+    display: none;
+    position: absolute;
+    width: 280px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+    right: -98%;
+}
+.Cancel-Ticket-submenu-Content{
+    width: 100%;
+    padding: 10px;
+}
+.Cancel-Ticket-submenu-Content a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+.Cancel-Ticket:hover .Cancel-Ticket-submenu{
+    display: block;
+}
+.Cancel-Ticket-submenu-Content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.HOLIDAYS{
+    position: relative;
+}
+.HOLIDAYS::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #fb792b;
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+}
+.HOLIDAYS:hover::after{
+    display: block;
+}
+.HOLIDAYS-Submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+    transform: translateY(5%);
+}
+.HOLIDAYS-Submenu-content{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.HOLIDAYS-Submenu-content a,i{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.HOLIDAYS:hover .HOLIDAYS-Submenu{
+    display: block;
+}
+.HOLIDAYS-Submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.Tourist-Trains{
+    position: relative;
+}
+.Tourist-Trains-submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    transform: translateX(92%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.Tourist-Trains-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.Tourist-Trains-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.Tourist-Trains:hover .Tourist-Trains-submenu{
+    display: block;
+}
+.Tourist-Trains-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.Tour-Packages{
+    position: relative;
+}
+.Tour-Packages-submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    transform: translateX(92%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.Tour-Packages-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.Tour-Packages-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.Tour-Packages:hover .Tour-Packages-submenu{
+    display: block;
+}
+.Tour-Packages-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.Stays{
+    position: relative;
+}
+.Stays-submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    transform: translateX(92%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.Stays-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.Stays-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.Stays:hover .Stays-submenu{
+    display: block;
+}
+.Stays-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+
+
+.LOYALTY{
+    position: relative;
+}
+
+.LOYALTY::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #fb792b;
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+}
+.LOYALTY:hover::after{
+    display: block;
+}
+
+.LOYALTY-submenu{
+    display: none;
+    position: absolute;
+    width: 280px;
+    background-color: #ffffff;
+    /* transform: translateX(92%); */
+    transform: translateY(3%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.LOYALTY-submenu-content{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.LOYALTY-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.LOYALTY:hover .LOYALTY-submenu{
+    display: block;
+}
+.LOYALTY-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.IRCTC-SBI-Credit-Card{
+    position: relative;
+}
+.IRCTC-SBI-Credit-Card-submenu{
+    display: none;
+    position: absolute;
+    width: 240px;
+    background-color: #ffffff;
+    right: 0;
+    transform: translateX(100%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.IRCTC-SBI-Credit-Card-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.IRCTC-SBI-Credit-Card-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.IRCTC-SBI-Credit-Card:hover .IRCTC-SBI-Credit-Card-submenu{
+    display: block;
+}
+.IRCTC-SBI-Credit-Card-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+.IRCTC-BOB-Credit-Card{
+    position: relative;
+}
+.IRCTC-BOB-Credit-Card-submenu{
+    display: none;
+    position: absolute;
+    width: 240px;
+    background-color: #ffffff;
+    right: 0;
+    transform: translateX(100%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.IRCTC-BOB-Credit-Card-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.IRCTC-BOB-Credit-Card-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.IRCTC-BOB-Credit-Card:hover .IRCTC-BOB-Credit-Card-submenu{
+    display: block;
+}
+.IRCTC-BOB-Credit-Card-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.IRCTC-HDFC-Credit-Card{
+    position: relative;
+}
+.IRCTC-HDFC-Credit-Card-submenu{
+    display: none;
+    position: absolute;
+    width: 260px;
+    background-color: #ffffff;
+    right: 0;
+    transform: translateX(100%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.IRCTC-HDFC-Credit-Card-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.IRCTC-HDFC-Credit-Card-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.IRCTC-HDFC-Credit-Card:hover .IRCTC-HDFC-Credit-Card-submenu{
+    display: block;
+}
+.IRCTC-HDFC-Credit-Card-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+
+
+
+.MEALS{
+    position: relative;
+}
+
+.MEALS::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #fb792b;
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+}
+.MEALS:hover::after{
+    display: block;
+}
+
+.MEALS-submenu{
+    display: none;
+    position: absolute;
+    width: 280px;
+    background-color: #ffffff;
+    /* transform: translateX(92%); */
+    transform: translateY(5%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.MEALS-submenu-content{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.MEALS-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.MEALS:hover .MEALS-submenu{
+    display: block;
+}
+.MEALS-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+.PROMOTIONS{
+    position: relative;
+}
+
+.PROMOTIONS::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #fb792b;
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 22%;
+    
+}
+.PROMOTIONS:hover::after{
+    display: block;
+}
+
+.PROMOTIONS-submenu{
+    display: none;
+    position: absolute;
+    width: 260px;
+    background-color: #ffffff;
+    transform: translateY(1%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.PROMOTIONS-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.PROMOTIONS-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.Advertise-With-Us,.IRCTC-Rail-Connect-App,.IRCTC-SBI-Credit-Card{
+    display: flex;
+    justify-content: space-between;
+}
+.PROMOTIONS:hover .PROMOTIONS-submenu{
+    display: block;
+}
+.PROMOTIONS-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+
+.Advertise-With-Us{
+    position: relative;
+}
+.Advertise-With-Us-submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.Advertise-With-Us-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.Advertise-With-Us-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.Advertise-With-Us:hover .Advertise-With-Us-submenu{
+    display: block;
+}
+.Advertise-With-Us-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+.IRCTC-Rail-Connect-App{
+    position: relative;
+}
+.IRCTC-Rail-Connect-App-submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.IRCTC-Rail-Connect-App-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.IRCTC-Rail-Connect-App-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.IRCTC-Rail-Connect-App:hover .IRCTC-Rail-Connect-App-submenu{
+    display: block;
+}
+.IRCTC-Rail-Connect-App-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+
+.MORE{
+    position: relative;
+}
+
+.MORE::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #fb792b;
+    display: none;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+.MORE:hover::after{
+    display: block;
+}
+.MORE-submenu{
+    display: none;
+    position: absolute;
+    width: 285px;
+    background-color: #ffffff;
+    right: -70%;
+    transform: translateY(2%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.MORE-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.MORE-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.At-Stations{
+    display: flex;
+    justify-content: space-between;
+}
+
+.MORE:hover .MORE-submenu{
+    display: block;
+}
+.MORE-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
+
+.At-Stations{
+    position: relative;
+}
+.At-Stations-submenu{
+    display: none;
+    position: absolute;
+    width: 250px;
+    background-color: #ffffff;
+    right: 0;
+    transform: translateX(100%);
+    box-shadow: 0px 8px 40px 0px rgba(0,0,0,0.2); 
+}
+.At-Stations-submenu-content{
+    padding: 10px;
+    width: 100%;
+}
+.At-Stations-submenu-content a{
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.At-Stations:hover .At-Stations-submenu{
+    display: block;
+}
+.At-Stations-submenu-content:hover{
+    background-color: rgb(247, 222, 226);
+}
+
+
