@@ -8,7 +8,7 @@ html,body{
     width: 100%;
     height: 100%;
 }
-section{
+#section1{
     width: 100%;
     height: 130px;
     /* background-color: black; */
@@ -827,5 +827,3 @@ nav{
 .At-Stations-submenu-content:hover{
     background-color: rgb(247, 222, 226);
 }
-
-
