@@ -7,6 +7,7 @@
     <title>IRCTC Next GenerationeTicketing System</title>
     <link rel="shortcut icon" href="/assests/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main-content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -346,7 +347,127 @@
                 <img src="/assests/logo.png" alt="irctc">
             </div>
         </nav>
+
+
+
+        <!-- main-content -->
+
+        <section id="main-content">
+            <div class="form-title">
+                <div class="formdata">
+                    <div class="form-upperpart">
+                        <div class="pnr-status form-upperpart-common">
+                            <img src="/assests/pnr.png" alt="pnr">
+                            <a href="#">PNR STATUS</a>
+                        </div>
+                        <div class="chart-status form-upperpart-common">
+                            <img src="/assests/chart.png" alt="chart">
+                            <a href="#">CHARTS/VACANCY</a>
+                        </div>
+                    </div>
+                    <div class="form-lowerpart">
+                        <div class="g20-azadi">
+                            <img src="/assests/azadikaamritmahotsab.jpg" alt="azadi ka amrit mahotsab">
+                            <h1>BOOK TICKET</h1>
+                            <img src="/assests/G20_Logo.png" alt="g20">
+                        </div>
+
+                        <div class="station-date">
+                            <div class="from-to">
+                                <!-- <p>From</p> -->
+                                <div class="from-station from-to-station">
+                                    <i class="fa-solid fa-location-arrow"></i>
+                                    <input type="type">
+                                </div>
+
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                
+                                <div class="to-station from-to-station">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div class="dates-class">
+                                <!-- <p>DD/MM/YYYY*</p> -->
+                                <div class="calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <input type="date">
+                                </div>
+                                <div class="classes">
+                                    <div class="All-Classes">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <select name="All-Classes" id="classes-name">
+                                            <option value="All Classes" class="All-Classes-option"><span>All Classes</span></option>
+                                            <option value="Anubhuti Class" class="All-Classes-option">Anubhuti Class (EA)</option>
+                                            <option value="AC First Class" class="All-Classes-option">AC First Class (1A)</option>
+                                            <option value="Vistadome AC" class="All-Classes-option">Vistadome AC (EV)</option>
+                                            <option value="Exec. Chair Car" class="All-Classes-option">Exec. Chair Car (EC)</option>
+                                            <option value="AC 2 Tier" class="All-Classes-option">AC 2 Tier (2A)</option>
+                                            <option value="First Class" class="All-Classes-option">First Class</option>
+                                            <option value="AC 3 Tier" class="All-Classes-option">AC 3 Tier (3A)</option>
+                                            <option value="AC 3 Economy" class="All-Classes-option">AC 3 Economy (3E)r</option>
+                                            <option value="Vistadome Chair Car" class="All-Classes-option">Vistadome Chair Car (VC)</option>
+                                            <option value="AC Chair Car" class="All-Classes-option">AC Chair Car (CC)</option>
+                                            <option value="Sleeper" class="All-Classes-option">SLeeper (SL)</option>
+                                            <option value="Vistadome Non AC" class="All-Classes-option">Vistadome Non AC (VS)</option>
+                                            <option value="Second Sitting" class="All-Classes-option">Second Sitting (2S)</option>
+                                        </select>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reservation-type">
+                            <i class="fa-solid fa-table-cells-large"></i>
+                            <select name="reservation-types" id="reservation-types">
+                                <option value="GENERAL">GENERAL</option>
+                                <option value="LADIES">LADIES</option>
+                                <option value="LOWER BIRTH/SR.CITIZEN">LOWER BIRTH/SR.CITIZEN</option>
+                                <option value="PERSON WITH DISABLITY">PERSON WITH DISABLITY</option>
+                                <option value="DUTY PASS">DUTY PASS</option>
+                                <option value="TATKAL">TATKAL</option>
+                                <option value="PREMIUM TATKAL">PREMIUM TATKAL</option>
+                            </select>
+                        </div>
+
+                        <div class="CONCESSION">
+                            <div class="concession1">
+                                <input type="checkbox" name="PWDC" id="PWDC">
+                                <label for="PWDC">Person With Disability Concession</label>
+                                <input type="checkbox" name="FWD" id="FWD">
+                                <label for="FWD">Flexible With Date</label>
+                            </div>
+                            <div class="concession2">
+                                <input type="checkbox" name="TWAB" id="TWAB">
+                                <label for="TWAB">Train With Available Birth</label>
+                                <input type="checkbox" name="RPC" id="RPC">
+                                <label for="RPC">Railway Pass Concession</label>
+                            </div>
+                        </div>
+
+                        <div class="search-bar-and-AI">
+                            <button type="button" id="search-button" class="button-common"><a href="#">Search</a></button>
+                            <button type="button" id="try-booking-button" class="button-common"><a href="#">Try Booking in Ask DISHA 2.0</a></button>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="railways-title">
+                    <div class="indian-railways">
+                        <h1>INDIAN RAILWAYS</h1>
+                    </div>
+                    <div class="indian-railway-lower-part">
+                        <span>Safety | Security | Punctuality</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </section>
+    
     <script src="/script.js"></script>
 </body>
 
