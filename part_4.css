@@ -5,7 +5,9 @@
     align-items: center;
     /* background-color: aqua; */
     padding-top: 20px;
+    padding-bottom: 80px;
     gap: 60px;
+    /* display: none; */
 }
 .block{
     width: 30%;
@@ -63,6 +65,7 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
+    margin-bottom: 5px;
 }
 .social-media-logos{
     display: flex;

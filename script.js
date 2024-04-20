@@ -21,4 +21,18 @@ function updateDateTime() {
   
   updateDateTime();
   setInterval(updateDateTime, 1000);
+
+//   document.querySelector('.REGISTER').addEventListener('click', function() {
+//     var maincontent_hidden = document.querySelector('#main-content');
+//     maincontent_hidden.style.display = 'none';
+// });
+
+// document.querySelector('.REGISTER').addEventListener('click', function() {
+//   var Part_3_hidden = document.querySelector('#Part_3');
+//   Part_3_hidden.style.display = 'none';
+// });
+// document.querySelector('.REGISTER').addEventListener('click', function() {
+//   var part_4_hidden = document.querySelector('#part_4');
+//   part_4_hidden.style.display = 'none';
+// });
   
