@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 14px;
     font-family: sans-serif;
 }
 html,body{
@@ -23,15 +23,15 @@ nav{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 60px;
+    padding: 10px 60px;
     /* margin: 20px 60px; */
     background-color: #ffffff;
     z-index: 1;
 }
 .logo1 img{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    width: 12vb;
+    height: 12vh;
+    padding: 5px;
 }
 .nav-content{
     display: flex;
@@ -102,9 +102,9 @@ nav{
 
 }
 .logo3 img{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    width: 12vb;
+    height: 12vh;
+    padding: 5px;
 }
 .DATE{
     display: flex;
@@ -218,7 +218,7 @@ nav{
     position: absolute;
     bottom: 0;
     left: 45%;
-    transform: translateY(85%);
+    transform: translateY(40%);
 }
 .TRAINS:hover::after{
     display: block;
@@ -326,7 +326,7 @@ nav{
 	border-bottom: 10px solid #fb792b;
     display: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 35%;
 }
 .HOLIDAYS:hover::after{
@@ -462,7 +462,7 @@ nav{
 	border-bottom: 10px solid #fb792b;
     display: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 35%;
 }
 .LOYALTY:hover::after{
@@ -604,7 +604,7 @@ nav{
 	border-bottom: 10px solid #fb792b;
     display: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 35%;
     left: 35%;
 }
 .MEALS:hover::after{
@@ -654,7 +654,7 @@ nav{
 	border-bottom: 10px solid #fb792b;
     display: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 22%;
     
 }
@@ -764,7 +764,7 @@ nav{
 	border-bottom: 10px solid #fb792b;
     display: none;
     position: absolute;
-    bottom: 20%;
+    bottom: 30%;
     left: 5%;
 }
 .MORE:hover::after{

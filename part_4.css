@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     /* background-color: aqua; */
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 80px;
     gap: 60px;
     /* display: none; */
@@ -25,7 +25,7 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     /* grid-template-rows: 400px 500px; */
-    gap: 150px;
+    gap: 100px;
 }
 .cards-section-all{
     /* background-color: yellow; */

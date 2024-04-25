@@ -1,6 +1,6 @@
 #main-content{
     width: 100%;
-    margin-top: 130px;
+    margin-top: 100px;
     background-image: url('/assests/bgbanner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,6 +10,8 @@
 .form-title{
     width: 100%;
     display: flex;
+    /* background-color: #01bb0a; */
+    padding-bottom: 20px;
 }
 .formdata{
     width: 45%;
@@ -30,7 +32,7 @@
     display: flex;
     align-items: center;
     background-color: #213d77;
-    padding: 10px;
+    padding: 5px;
 
 }
 .pnr-status img{
@@ -42,15 +44,15 @@
     width: 60px;
 }
 .pnr-status a{
-    padding-left: 90px;
-    font-size: 18px;
+    padding-left: 50px;
+    font-size: 16px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
 }
 .chart-status a{
-    padding-left: 50px;
-    font-size: 18px;
+    padding-left: 30px;
+    font-size: 16px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
@@ -59,7 +61,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 .g20-azadi{
     display: flex;
@@ -68,7 +70,7 @@
     padding: 25px;
 }
 .g20-azadi h1{
-    font-size: 40px;
+    font-size: 30px;
     color: #213d77;
 }
 
@@ -92,13 +94,13 @@
     color: #213d77;
 }
 .from-to-station{
-    height: 50px;
-    width: 430px;
+    height: 40px;
+    width: 350px;
     position: relative;
 }
 .from-to-station input{
     width: 100%;
-    height: 50px;
+    height: 40px;
     flex: 1;
     padding-left: 50px ;
     padding-right: 20px;
@@ -120,8 +122,8 @@
 }
 .calendar{
     position: relative;
-    height: 50px;
-    width: 300px;
+    height: 40px;
+    width: 220px;
     background-color: yellow;
 }
 .calendar i{
@@ -133,15 +135,15 @@
 }
 .calendar input{
     width: 100%;
-    height: 50px;
+    height: 40px;
     flex: 1;
     padding-left: 50px;
     padding-right: 20px;
 }
 .All-Classes{
     position: relative;
-    height: 50px;
-    width: 300px;
+    height: 40px;
+    width: 220px;
     background-color: yellow;
 }
 .All-Classes i{
@@ -153,7 +155,7 @@
 }
 #classes-name{
     width: 100%;
-    height: 50px;
+    height: 40px;
     flex: 1;
     padding-left: 50px;
     padding-right: 30px;
@@ -161,13 +163,13 @@
 #classes-name option{
     width: 100%;
     height: 100%;
-    padding: 20px 0;
+    /* padding: 50px 0; */
     border: 1px solid black;
 }
 .reservation-type{
     position: relative;
-    height: 50px;
-    width: 430px;
+    height: 40px;
+    width: 350px;
     margin-left: 40px;
 }
 .reservation-type i{
@@ -179,7 +181,7 @@
 }
 #reservation-types{
     width: 100%;
-    height: 50px;
+    height: 40px;
     flex: 1;
     padding-left: 50px;
     padding-right: 30px;
@@ -187,7 +189,7 @@
 
 .CONCESSION{
     width: 100%;
-    margin: 20px 0;
+    margin: 10px 0;
     padding-left: 30px;
     display: flex;
     flex-direction: column;
@@ -196,17 +198,17 @@
 .concession1{
     display: flex;
     gap: 20px;
-    font-size: 18px;
+    /* font-size: 8px; */
 }
 .concession1 input{
     width: 40px;
     background-color: #213d77;
 }
-.congession1 label{
+/* .congession1 label{
     font-size: 28px;
     color: #213d77;
     font-weight: 700;
-}
+} */
 .concession2{
     display: flex;
     gap: 30px;
@@ -215,21 +217,21 @@
 .concession2 input{
     width: 40px;
 }
-.congession2 label{
+/* .congession2 label{
     font-size: 28px;
     color: #213d77;
     font-weight: 700;
-}
+} */
 
 .search-bar-and-AI{
     display: flex;
     /* justify-content: space-around;
     align-items: center; */
     margin: 40px;
-    gap: 350px;
+    gap: 250px;
 }
 .button-common{
-    height: 50px;
+    height: 40px;
     padding: 8px 14px;
     border: none;
     border-radius: 5px;
@@ -240,20 +242,20 @@
 }
 #search-button{
     background-color: #fb792b;
-    width: 150px;
+    width: 200px;
 }
 #try-booking-button{
     background-color: #01bb0a;
-    width: 280px;
+    width: 500px;
 }
 
 .railways-title{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-    margin-left: 180px;
+    margin-left: 140px;
 }
 .indian-railways h1{
     font-size: 60px;

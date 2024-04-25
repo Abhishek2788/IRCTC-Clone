@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +10,11 @@
     <link rel="stylesheet" href="part_3.css">
     <link rel="stylesheet" href="part_4.css">
     <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="/registration_page_personal_details_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
     <section id="section1">
         <nav>
@@ -24,8 +23,6 @@
             </div>
             <div class="nav-content">
                 <div class="nav-content-upper">
-                    <div class="LOGIN">LOGIN</div>
-                    <div class="REGISTER"><a href="/registration_page.html">REGISTER</a></div>
                     <div class="AGENT-LOGIN">AGENT LOGIN</div>
                     <div class="CONTACT US">CONTACT US</div>
                     <div class="DAILY-DEALS">DAILY DEALS</div>
@@ -350,237 +347,134 @@
                 <img src="/assests/logo.png" alt="irctc">
             </div>
         </nav>
+    </section>
+    
+    <section id="Registration-section-block">
+        <div class="Registration-section-block-container">
+            <div class="Registration-section-main-container">
 
-        <!-- main-content -->
-
-        <section id="main-content">
-            <div class="form-title">
-                <div class="formdata">
-                    <div class="form-upperpart">
-                        <div class="pnr-status form-upperpart-common">
-                            <img src="/assests/pnr.png" alt="pnr">
-                            <a href="#">PNR STATUS</a>
+                <div class="Registration-section-form">
+                    <div class="creation-of-account">
+                        <h2 style="color: #000000; font-size: 26px; font-family: sans-serif;">Create Your account</h2>
+                        <a href="#" style="color: #fb792b; font-size: 18px; font-weight: 700; ">SIGN IN</a>
+                    </div>
+                    <div class="details-section">
+                        <div class="basic-details details-section-common">
+                            <a href="/registration_page.html">Basic Details</a>
                         </div>
-                        <div class="chart-status form-upperpart-common">
-                            <img src="/assests/chart.png" alt="chart">
-                            <a href="#">CHARTS/VACANCY</a>
+                        <div class="personal-details details-section-common">
+                            <a href="/registration_page_personal_details.html">Personal Details</a>
+                        </div>
+                        <div class="address-details details-section-common">
+                            <a href="#">Address Details</a>
                         </div>
                     </div>
-                    <div class="form-lowerpart">
-                        <div class="g20-azadi">
-                            <img src="/assests/azadikaamritmahotsab.jpg" alt="azadi ka amrit mahotsab">
-                            <h1>BOOK TICKET</h1>
-                            <img src="/assests/G20_Logo.png" alt="g20">
+                    <hr>
+
+                    <div class="names-details">
+                        <div class="firstname-container">
+                            <input type="text" placeholder="First Name">
                         </div>
+                        <div class="middlename-container">
+                            <input type="text" placeholder="Middle Name [Optional]">
+                        </div>
+                        <div class="lastname-container">
+                            <input type="text" placeholder="Last Name [Optional]">
+                        </div>
+                    </div>
 
-                        <div class="station-date">
-                            <div class="from-to">
-                                <!-- <p>From</p> -->
-                                <div class="from-station from-to-station">
-                                    <i class="fa-solid fa-location-arrow"></i>
-                                    <input type="type">
+                    <div class="rules-for-names">
+                        <p>Info!Please provide your exact name as per Aadhaar to avail Aadhaar based benefits on IRCTC eTicketing website.</p>
+                    </div>
+
+                    <div class="individual-other-details">
+                        <div class="individual-other-details-part1">
+                            <div class="select-occupation-block">
+                                <select name="sc" id="SelectOccupation">
+                                    <option value="">Select Occupation</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Public">Public</option>
+                                    <option value="Private">Private</option>
+                                    <option value="Professional">Professional</option>
+                                    <option value="Self Employed">Self Employed</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="marital-status">
+                                <div class="married-block">
+                                    <input type="radio">
+                                    <label for="Married">Married</label>
                                 </div>
+                                <div class="married-block">
+                                    <input type="radio">
+                                    <label for="Unmarried">Unmarried</label>
+                                </div>
+                            </div>
 
-                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                                
-                                <div class="to-station from-to-station">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <input type="text">
+                            <div class="gender-blocks">
+                                <div class="male-block">
+                                    <button>Male</button>
+                                </div>
+                                <div class="female-block">
+                                    <button>Female</button>
+                                </div>
+                                <div class="transgender-block">
+                                    <button>Transgender</button>
                                 </div>
                             </div>
 
-                            <div class="dates-class">
-                                <!-- <p>DD/MM/YYYY*</p> -->
-                                <div class="calendar">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <input type="date">
+                            <div class="mobile-number-blocks">
+                                <div class="country-code">
+                                    <input type="number" placeholder="91">
                                 </div>
-                                <div class="classes">
-                                    <div class="All-Classes">
-                                        <i class="fa-solid fa-briefcase"></i>
-                                        <select name="All-Classes" id="classes-name">
-                                            <option value="All Classes" class="All-Classes-option"><span>All Classes</span></option>
-                                            <option value="Anubhuti Class" class="All-Classes-option">Anubhuti Class (EA)</option>
-                                            <option value="AC First Class" class="All-Classes-option">AC First Class (1A)</option>
-                                            <option value="Vistadome AC" class="All-Classes-option">Vistadome AC (EV)</option>
-                                            <option value="Exec. Chair Car" class="All-Classes-option">Exec. Chair Car (EC)</option>
-                                            <option value="AC 2 Tier" class="All-Classes-option">AC 2 Tier (2A)</option>
-                                            <option value="First Class" class="All-Classes-option">First Class</option>
-                                            <option value="AC 3 Tier" class="All-Classes-option">AC 3 Tier (3A)</option>
-                                            <option value="AC 3 Economy" class="All-Classes-option">AC 3 Economy (3E)r</option>
-                                            <option value="Vistadome Chair Car" class="All-Classes-option">Vistadome Chair Car (VC)</option>
-                                            <option value="AC Chair Car" class="All-Classes-option">AC Chair Car (CC)</option>
-                                            <option value="Sleeper" class="All-Classes-option">SLeeper (SL)</option>
-                                            <option value="Vistadome Non AC" class="All-Classes-option">Vistadome Non AC (VS)</option>
-                                            <option value="Second Sitting" class="All-Classes-option">Second Sitting (2S)</option>
-                                        </select>
-                                    </div>
-                                    
+                                <div class="mobile-number">
+                                    <input type="text" maxlength="10" placeholder="Mobile">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="reservation-type">
-                            <i class="fa-solid fa-table-cells-large"></i>
-                            <select name="reservation-types" id="reservation-types">
-                                <option value="GENERAL">GENERAL</option>
-                                <option value="LADIES">LADIES</option>
-                                <option value="LOWER BIRTH/SR.CITIZEN">LOWER BIRTH/SR.CITIZEN</option>
-                                <option value="PERSON WITH DISABLITY">PERSON WITH DISABLITY</option>
-                                <option value="DUTY PASS">DUTY PASS</option>
-                                <option value="TATKAL">TATKAL</option>
-                                <option value="PREMIUM TATKAL">PREMIUM TATKAL</option>
-                            </select>
+                        <div class="individual-other-details-part2">
+                            <div class="dob-block">
+                                <input type="date">
+                            </div>
+                            <div class="counrty-block">
+                                <select name="country" id="Counrty-names">
+                                    <option value="India">India</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Afganishtan">Afganishtan</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Nepal">Nepal</option>
+                                </select>
+                            </div>
+                            <div class="email-block">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="nationality-block">
+                                <select name="nationality" id="Nationality-section">
+                                    <option value="India">India</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Afganishtan">Afganishtan</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Nepal">Nepal</option>
+                                </select>
+                            </div>
                         </div>
 
-                        <div class="CONCESSION">
-                            <div class="concession1">
-                                <input type="checkbox" name="PWDC" id="PWDC">
-                                <label for="PWDC" style="color: #213d77; font-size: 14px; font-weight: 700;">Person With Disability Concession</label>
-                                <input type="checkbox" name="FWD" id="FWD">
-                                <label for="FWD" style="color: #213d77; font-size: 14px; font-weight: 700;">Flexible With Date</label>
-                            </div>
-                            <div class="concession2">
-                                <input type="checkbox" name="TWAB" id="TWAB">
-                                <label for="TWAB" style="color: #213d77; font-size: 14px; font-weight: 700;">Train With Available Birth</label>
-                                <input type="checkbox" name="RPC" id="RPC">
-                                <label for="RPC" style="color: #213d77; font-size: 14px; font-weight: 700;">Railway Pass Concession</label>
-                            </div>
+                        <div class="cancel-submit-button" style="padding-top: 20px;">
+                            <button style="width: 130px; height: 50px; border: 1px solid rgb(194, 190, 190); background: #ffffff; font-size: 16px; font-weight: 600; font-family: sans-serif;">Cancel</button>
+                            <button style="width: 130px; height: 50px; border: 1px solid rgb(194, 190, 190); background-color: #fb792b; font-size: 16px; font-weight: 600; font-family: sans-serif; color: #ffffff; text-align: center;">Continue<i class="fa-solid fa-right-long" style="color: #ffffff; text-align: center; padding-left: 3px;"></i></button>
                         </div>
-
-                        <div class="search-bar-and-AI">
-                            <button type="button" id="search-button" class="button-common"><a href="#">Search</a></button>
-                            <button type="button" id="try-booking-button" class="button-common"><a href="#">Try Booking in Ask DISHA 2.0</a></button>
-                        </div>
+                    </div>
+    
+                    
+                </div>
+    
+                <div class="Registration-section-blank"></div>
+            </div>
+        </div>
         
-                    </div>
-                </div>
-
-                <div class="railways-title">
-                    <div class="indian-railways">
-                        <h1>INDIAN RAILWAYS</h1>
-                    </div>
-                    <div class="indian-railway-lower-part">
-                        <span>Safety | Security | Punctuality</span>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </section>
-
-    <!-- Part 3rd -->
-    <section id="Part_3">
-
-        <div class="advertisement-section">
-        </div>
-
-        <div class="services">
-            <div class="service-title">
-                <h1>Have you not found the right one?
-                    Find a service suitable for you here.</h1>
-            </div>
-            <div class="services-types">
-                <div class="service-type-flights service-inner-data">
-                    <span><i class="fa-solid fa-plane-up"></i></span>
-                    <label for="flights">FLIGHTS</label>
-                </div>
-                <div class="service-type-hotels service-inner-data">
-                    <span><i class="fa-solid fa-tree-city"></i></i></span>
-                    <label for="hotels">HOTELS</label>
-                </div>
-                <div class="service-type-rail-drishti service-inner-data">
-                    <span><i class="fa-solid fa-chart-line"></i></span>
-                    <label for="rail-drishti">RAIL DRISHTI</label>
-                </div>
-                <div class="service-type-e-catering service-inner-data">
-                    <span><i class="fa-solid fa-bell-concierge"></i></span>
-                    <label for="e-catering">E-CATERING</label>
-                </div>
-                <div class="service-type-bus service-inner-data">
-                    <span><i class="fa-solid fa-bus"></i></span>
-                    <label for="bus">BUS</label>
-                </div>
-                <div class="service-type-holiday-packages service-inner-data">
-                    <span><i class="fa-solid fa-umbrella-beach"></i></span>
-                    <label for="holiday-packages">HOLIDAY PACKAGES</label>
-                </div>
-                <div class="service-type-tourist-train service-inner-data">
-                    <span><i class="fa-solid fa-train"></i></span>
-                    <label for="tourist-train">TOURIST TRAIN</label>
-                </div>
-                <div class="service-type-hill-railways service-inner-data">
-                    <span><i class="fa-solid fa-mountain-sun"></i></span>
-                    <label for="hill-railways">HILL RAILWAYS</label>
-                </div>
-                <div class="service-type-charter-train service-inner-data">
-                    <span><i class="fa-solid fa-train-tram"></i></span>
-                    <label for="charter-train">CHARTER TRAIN</label>
-                </div>
-                <div class="service-type-gallery service-inner-data">
-                    <span><i class="fa-brands fa-envira"></i></span>
-                    <label for="gallery">GALLERY</label>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Part 4th-->
-    <section id="part_4">
-        <div class="block"></div>
-        <div class="holiday-section"><h2>HOLIDAY</h2></div>
-        <div class="cards-section">
-            <div class="card-maharaja cards-section-all">
-                <div class="card-maharaja-img cards-section-img-common">
-                    <img src="/assests/card-maharaja-img.jpg" alt="maharaja-img">
-                </div>
-                <div class="card-maharaja-content-data cards-section-content-data">
-                    <h1>Maharajas' Express</h1>
-                    <p>Redefining Royalty, Luxury and Comfort, Maharajas' express takes you on a sojourn to the era of bygone stately splendour of princely states. Sylvan furnishings, elegant ambience and modern amenities are amalgamated for an “Experience Unsurpassed”. It has been a winner of “World’s Leading Luxury train” by World Travel Awards consecutively for last six years.</p>
-                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-            <div class="card-international-package cards-section-all">
-                <div class="card-international-package-img cards-section-img-common">
-                    <img src="/assests/Thailand.jpg" alt="thailand-img">
-                </div>
-                <div class="card-international-package-content-data cards-section-content-data">
-                    <h1>International Packagess</h1>
-                    <p>Best deals in International Holiday packages, handpicked by IRCTC, for Thailand, Dubai, Sri Lanka, Hong Kong, China, Macau, Bhutan, Nepal, U.K., Europe, USA, Australia etc. The packages are inclusive of sightseeing, meals, visa charges and overseas medical insurance to give you a hassle-free and memorable experience.</p>
-                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-            <div class="card-domestic-air cards-section-all">
-                <div class="card-domestic-air-img cards-section-img-common">
-                    <img src="/assests/Kashmir.jpg" alt="kashmir-img">
-                </div>
-                <div class="card-domestic-air-content-data cards-section-content-data">
-                    <h1>Domestic Air Packages</h1>
-                    <p>Be it the spiritual devotee seeking blessings of Tirupati, Shirdi or Mata Vaishno Devi or the leisure traveller wanting to relish the Blue mountains of North East, Sand-dunes of Rajasthan, Hamlets of Ladakh, Wonders of Himalayas, Serene lakes or Picturesque Islands, IRCTC has it all. Discover India through IRCTC!</p>
-                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-            <div class="card-bharat-Gaurav cards-section-all">
-                <div class="card-bharat-Gaurav-img cards-section-img-common">
-                    <img src="/assests/Bharat_Gaurav.jpg" alt="card-bharat-Gaurav-img">
-                </div>
-                <div class="card-bharat-Gaurav-content-data cards-section-content-data">
-                    <h1>Bharat Gaurav Tourist Train</h1>
-                    <p>IRCTC operates Bharat Gaurav Tourist Train having AC III-Tier accommodation on train specially designed to promote domestic tourism in India. This train runs on various theme based circuits covering pilgrimage and heritage destinations in its itinerary on a 5 days to 20 days trip and showcase India’s rich cultural heritage.</p>
-                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-            <div class="card-rail-tour-package cards-section-all">
-                <div class="card-rail-tour-package-img cards-section-img-common">
-                    <img src="/assests/Manali.jpg" alt="manali-img">
-                </div>
-                <div class="card-rail-tour-package-content-data cards-section-content-data">
-                    <h1>Rail Tour Packages</h1>
-                    <p>IRCTC offers Exclusive Rail tour packages with confirmed train tickets, sight-seeing and meals for enchanting Nilgiri Mountains, Darjeeling, Kullu Manali, Kashmir, Gangtok or divine tours of Mata Vaishno Devi, Rameswaram, Madurai, Shirdi, Tirupati etc. Holiday packages/ Land packages to these destinations are also available.</p>
-                    <a href="#">Read More<i class="fa-solid fa-arrow-right-long"></i></a>
-                </div>
-            </div>
-        </div>
     </section>
 
     <footer>
@@ -736,5 +630,4 @@
     
     <script src="/script.js"></script>
 </body>
-
 </html>
