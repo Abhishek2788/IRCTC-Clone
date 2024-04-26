@@ -74,3 +74,174 @@ hr{
     background-color: grey;
     margin-bottom: 30px;
 }
+.names-details{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.name-container{
+    width: 180px;
+}
+.names-details-common{
+    border-radius: 5px;
+    outline-color: #082b71;
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(222, 220, 220);
+}
+.names-details-common::placeholder{
+    color: #082b71;
+    font-weight: 700;
+}
+.rules-for-names p{
+    color: #333333;
+    font-size: 17px;
+    font-weight: 700;
+}
+.individual-other-details{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: green; */
+    margin-top: 20px;
+}
+.individual-other-details-part1{
+    /* background-color: violet; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.select-occupation-block{
+    width: 90%;
+    /* background-color: yellow; */
+    height: 4.5vh;
+}
+#SelectOccupation{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: #082b71;
+    font-weight: 700;
+    font-family: sans-serif;
+    outline: none;
+    border: 1px solid rgb(222, 220, 220);
+}
+#SelectOccupation>option{
+    color: rgb(145, 143, 143);
+    font-family: sans-serif;
+}
+.marital-status{
+    display: flex;
+    gap: 20px;
+}
+.married-block{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.married-block input{
+    width: 15px;
+    height: 20px;
+}
+.married-block label{
+    color: #082b71;
+    font-weight: 700;
+    font-size: 14px;
+}
+.gender-blocks{
+    display: flex;
+    width: 100%;
+    /* background-color: yellow; */
+}
+.gender-blocks>div{
+    width: 50%;
+    height: 4.5vh;
+}
+.gender-blocks>div>button{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(222, 220, 220);
+    background-color: #ffffff;
+    color: #082b71;
+    font-weight: 600;
+}
+.mobile-number-blocks{
+    display: flex;
+    /* background-color: #082b71; */
+    width: 100%;
+    height: 4.5vh;
+    gap: 20%;
+}
+.country-code{
+    width: 20%;
+}
+.mobile-number{
+    width: 80%;
+}
+.mobile-number-blocks>div{
+    height: 100%;
+    /* background-color: yellow; */
+}
+.mobile-number-blocks>div>input{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(222, 220, 220);
+    border-radius: 5px;
+}
+.mobile-number-blocks>div>input::placeholder{
+    color: #082b71;
+    font-weight: 600;
+}
+
+
+
+.individual-other-details-part2{
+    width: 50%;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+.individual-other-details-part2>div{
+    width: 80%;
+    height: 4.5vh;
+    /* background-color: yellow; */
+}
+.individual-other-details-part2>div>input{
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(222, 220, 220);
+    padding: 10px;
+    color: #082b71;
+    font-weight: 700;
+    font-family: sans-serif;
+    border-radius: 5px;
+    
+}
+.individual-other-details-part2>div>input::placeholder{
+    color: #082b71;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.individual-other-details-part2>div>select{
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: 1px solid rgb(222, 220, 220);
+    color: #082b71;
+    font-weight: 700;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+.individual-other-details-part2>div>select>option{
+    color: rgb(145, 143, 143);
+    font-family: sans-serif;
+}
