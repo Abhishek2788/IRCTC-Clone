@@ -63,9 +63,10 @@ nav{
     color: #ffffff;
     font-size: 14px;
 }
-.DAILY-DEALS{
+.DAILY-DEALS a{
     color: red;
     font-weight: 700;
+    text-decoration: none;
 }
 .ALERTS{
     background-color: #d3d3d3;

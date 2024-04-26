@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="part_4.css">
     <link rel="stylesheet" href="register.css">
     <link rel="stylesheet" href="/registration_page_personal_details_style.css">
+    <link rel="stylesheet" href="/registration_page_address_details_style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -366,104 +367,76 @@
                             <a href="/registration_page_personal_details.html">Personal Details</a>
                         </div>
                         <div class="address-details details-section-common">
-                            <a href="/registration_page_address_details.html
-                            ">Address</a>
+                            <a href="/registration_page_address_details.html">Address</a>
                         </div>
                     </div>
                     <hr>
 
-                    <div class="names-details">
-                        <div class="firstname-container name-container">
-                            <input type="text" placeholder="First Name" class="names-details-common">
-                        </div>
-                        <div class="middlename-container name-container">
-                            <input type="text" placeholder="Middle Name [Optional]" class="names-details-common">
-                        </div>
-                        <div class="lastname-container name-container">
-                            <input type="text" placeholder="Last Name [Optional]" class="names-details-common">
-                        </div>
-                    </div>
-
-                    <div class="rules-for-names">
-                        <p>Info!Please provide your exact name as per Aadhaar to avail Aadhaar based benefits on IRCTC eTicketing website.</p>
-                    </div>
-
-                    <div class="individual-other-details">
-                        <div class="individual-other-details-part1">
-                            <div class="select-occupation-block">
-                                <select name="sc" id="SelectOccupation">
-                                    <option value="">Select Occupation</option>
-                                    <option value="Government">Government</option>
-                                    <option value="Public">Public</option>
-                                    <option value="Private">Private</option>
-                                    <option value="Professional">Professional</option>
-                                    <option value="Self Employed">Self Employed</option>
-                                    <option value="Student">Student</option>
-                                    <option value="Other">Other</option>
+                    <div class="address-details-section">
+                        <div class="address-details-part11">
+                            <div class="flat">
+                                <input type="text" placeholder="Flat/Door/Block No.">
+                            </div>
+                            <div class="area-locality">
+                                <input type="text" placeholder="Area/Locality (Optional)">
+                            </div>
+                            <div class="city-selection">
+                                <select name="city" id="cities-names">
+                                    <option value="">Select city</option>
                                 </select>
                             </div>
-
-                            <div class="marital-status">
-                                <div class="married-block">
-                                    <input type="radio">
-                                    <label for="Married">Married</label>
-                                </div>
-                                <div class="married-block">
-                                    <input type="radio">
-                                    <label for="Unmarried">Unmarried</label>
-                                </div>
-                            </div>
-
-                            <div class="gender-blocks">
-                                <div class="male-block">
-                                    <button>Male</button>
-                                </div>
-                                <div class="female-block">
-                                    <button>Female</button>
-                                </div>
-                                <div class="transgender-block">
-                                    <button>Transgender</button>
-                                </div>
-                            </div>
-
-                            <div class="mobile-number-blocks">
-                                <div class="country-code">
-                                    <input type="number" placeholder="91">
-                                </div>
-                                <div class="mobile-number">
-                                    <input type="text" maxlength="10" placeholder="Mobile">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="individual-other-details-part2">
-                            <div class="dob-block">
-                                <input type="date">
-                            </div>
-                            <div class="counrty-block">
-                                <select name="country" id="Counrty-names">
-                                    <option value="India">India</option>
-                                    <option value="Pakistan">Pakistan</option>
-                                    <option value="Afganishtan">Afganishtan</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Nepal">Nepal</option>
-                                </select>
-                            </div>
-                            <div class="email-block">
-                                <input type="email" placeholder="Email">
-                            </div>
-                            <div class="nationality-block">
-                                <select name="nationality" id="Nationality-section">
-                                    <option value="India">India</option>
-                                    <option value="Pakistan">Pakistan</option>
-                                    <option value="Afganishtan">Afganishtan</option>
-                                    <option value="Australia">Australia</option>
-                                    <option value="Nepal">Nepal</option>
+                            <div class="post-office-selection">
+                                <select name="postoffice" id="post-office-names">
+                                    <option value="">Select a Post Office</option>
                                 </select>
                             </div>
                         </div>
 
+                        <div class="address-details-part22">
+                            <div class="street-lane">
+                                <input type="text" placeholder="Street/Lane (Optional)">
+                            </div>
+                            <div class="pin-code">
+                                <input type="text" placeholder="Pin code">
+                            </div>
+                            <div class="state-name">
+                                <input type="text" placeholder="State">
+                            </div>
+                            <div class="phone-num">
+                                <input type="text" maxlength="10" placeholder="Phone">
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="residence-yes-no">
+                        <p>Copy Residence to office Address</p>
+                        <div class="yes-no-residence">
+                            <div class="radio-yes">
+                                <input type="radio">
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div class="radio-no">
+                                <input type="radio">
+                                <label for="No">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="message-irctc">
+                        <div class="irctc-cobranded">
+                            <input type="checkbox">
+                            <p>Please inform me about IRCTC Co-branded credit card through Phone/Email/SMS (Optional)</p>
+                        </div>
+                        <div class="irctc-wavier-message">
+                            <p>Enjoy the railway ticket booking with 1% PG transaction charges waiver with IRCTC SBI/BOB/HDFC cards and also you can book ticket using earned loyalty reward points</p>
+                        </div>
+                    </div>
+
+                    <div class="irctc-terms-conditions">
+                        <input type="checkbox">
+                        <p>I have read and agree with the <a href="#">Terms and Conditions</a> and also agree to receive promotional emails/SMS/WhatsApp/Alerts/offers/announcements from IRCTC & associated partners.</p>
+                    </div>
+
                     <div class="cancel-submit-button" style="padding-top: 40px;">
                         <button style="width: 130px; height: 50px; border: 1px solid rgb(194, 190, 190); background: #ffffff; font-size: 16px; font-weight: 600; font-family: sans-serif;">Cancel</button>
                         <button style="width: 130px; height: 50px; border: 1px solid rgb(194, 190, 190); background-color: #fb792b; font-size: 16px; font-weight: 600; font-family: sans-serif; color: #ffffff; text-align: center;">Continue<i class="fa-solid fa-right-long" style="color: #ffffff; text-align: center; padding-left: 3px;"></i></button>
