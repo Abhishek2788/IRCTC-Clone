@@ -97,6 +97,7 @@
     height: 40px;
     width: 350px;
     position: relative;
+    outline: none;
 }
 .from-to-station input{
     width: 100%;
@@ -105,6 +106,20 @@
     padding-left: 50px ;
     padding-right: 20px;
     color: #213d77;
+    outline-color: #213d77;
+}
+.from-to-station label{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 14px;
+    padding: 0px 5px;
+    transition: 0.3s;
+    pointer-events: none;
+}
+.from-to-station .input-from:focus + .from-label{
+    top: -40%;
+    font-size: 12px;
 }
 .from-to-station i{
     color: #213d77;
