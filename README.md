@@ -27,7 +27,7 @@ JavaScript: For interactivity and basic functionality
 How to Run
 
 Clone the repository:
-
+git clone:https://github.com/Abhishek2788/IRCTC-Clone.git
 
 
 Open the index.html file in a browser.
